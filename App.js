@@ -12,16 +12,23 @@ import AddEntry from './components/AddEntry'
 export default class App extends React.Component {
 
   handlePress = () =>{
-    alert('hello')
   }
 
   render() {
     return (
-      <View style={styles.container} >
-        <TouchableHighlight style={styles.btn}>
-          <Text style={styles.btnText}>Touchable Highlight</Text>
-        </TouchableHighlight>
-      </View>
+      <View>
+
+        <AddEntry />
+      {/* <View style={styles.container} >
+        <TouchableNativeFeedback
+            background={TouchableNativeFeedback.SelectableBackground()}
+            onPress={this.handlePress} >
+          <View style={styles.btn}>
+            <Text style={styles.btnText}>Touchable Highlight</Text>
+          </View>
+        </TouchableNativeFeedback>
+      </View> */}
+    </View>
     )
   }
 }
