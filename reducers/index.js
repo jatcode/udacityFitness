@@ -1,7 +1,7 @@
 import {RECEIVE_ENTRIES, ADD_ENTRY } from '../actions'
 
 
-function entries (state = {}, action) {
+export default function entries (state = {}, action) {
 
   switch (action.type) {
     case RECEIVE_ENTRIES:
