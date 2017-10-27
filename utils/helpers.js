@@ -66,7 +66,7 @@ export function getMetricMetaInfo (metric) {
               name='swim'
               color={white}
               size={35}
-            /> 
+            />
           </View>
         )
       }
@@ -158,6 +158,6 @@ export function timeToString (time = Date.now()) {
 
 export function getDailyReminderValue() {
   return{
-    today: "/uwave Don't forget to log your data today"
+    today: "👋 Don't forget to log your data today"
   }
 }
